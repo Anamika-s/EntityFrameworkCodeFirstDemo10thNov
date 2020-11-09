@@ -1,0 +1,74 @@
+﻿@model EntityFrameworkCodeFirstDemo.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.emailID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.emailID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateofJoin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateofJoin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.managerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.managerID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
